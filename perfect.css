@@ -1,0 +1,103 @@
+body {
+    background-color: whitesmoke;
+    font-size: larger;
+}
+div[id=header] {
+text-align: center;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+letter-spacing: 0.1cm;
+}
+div[id=main] {
+    width: 1000px;
+    border: 15px;
+    margin-top: 20px;
+    margin-left: 170px;
+    background-color: white;
+    color:rgb(65, 62, 62);
+    padding: 10px 20px 20px 20px;
+    border-radius: 20px;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+input[type=text] {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: large;
+}
+input[type=password] {
+    border: 10px;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: large;
+    box-sizing: border-box;
+}
+
+em {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size:xx-large;
+    font-weight: bold;
+}
+strong {
+    color: grey;
+}
+button[id=but1]{ 
+    width:120px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(2, 172, 31);
+    color: white;
+}
+button[id=but1]:after {
+    content: '\00bb';
+    position: sticky;
+    opacity: 1;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+   
+  }
+button[id=but1]:hover{
+    background-color: rgb(24, 192, 24);
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-size: larger;
+    color: white;
+    padding-right: 25px ;
+   
+    
+}
+button[id=but2]{
+    width:120px;
+    padding: 10px;
+    text-align: center;
+}
+button[id=but2]:after {
+    content: '\00bb';
+    position: sticky;
+    opacity: 1;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+   
+  }
+button[id=but2]:hover{
+    background-color: rgb(250, 74, 74);
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-size: larger;
+    color: white;
+    padding-right: 25px ;
+}
+
+span[id=span2]{
+    color: grey;
+    text-underline-position: below;
+}
+small {
+    font-size: 0.4cm;
+}

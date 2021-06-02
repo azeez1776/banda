@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>REGISTRATIONFORM</title>
+        <link href="css/perfect.css" type="text/css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript">
+    
+   
+      function allLetter(inputtxt)
+      {
+       var letters = /^[A-Za-z]+$/;
+       if(inputtxt.value.match(letters))
+        {
+          return true;
+        }
+      else
+        {
+        return false;
+        }
+     }
+   
+   
+   
+   
+      function VALIDATE(){
+       var x =  document.forms["funame"]["fname"];
+       var y =  document.forms["funame"]["lname"];
+       var z = document.forms["funame"]["age"];
+       var q = document.forms["funame"]["email"];
+       var w = document.forms["funame"]["password"];
+   
+   
+         if(allLetter(x)== false || x.value == ""){
+             alert("first name must be filled correctly");
+             document.forms["funame"]["fname"].focus();
+             return false;
+           }
+          if(allLetter(y)== false || y.value == ""){
+            alert("last name must be filled correctly");
+             document.forms["funame"]["lname"].focus();
+             return false;
+            }
+          if(z.value == "" ){
+            alert("age must be filled");
+             document.forms["funame"]["age"].focus();
+             return false;
+            }
+           if(isNaN(z.value)||z.value<1||z.value>100){
+            alert("age should be a number");
+            document.forms["funame"]["age"].focus();
+            return false;
+           }
+           if(q.value == ""){
+            alert("email must be filled");
+             document.forms["funame"]["email"].focus();
+             return false;
+            }   
+           if(w.value == ""){
+            alert("password must be filled");
+             document.forms["funame"]["password"].focus();
+             return false;
+            }
+                
+            }
+          
+   </script>
+    </head>
+    <body>
+        <div id="header">
+            <h1>REGISTRATION FORM</h1>
+            <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">BY BANTTER</p>
+       </div>
+            <div id="main">
+                <p><em>Register here</em><br>
+                    <strong>Let's quickly get your details.</strong></p><hr>
+        <form name="funame"  onsubmit="return VALIDATE()" align="center">   
+        <p>
+            <input type="text" name="fname" placeholder="Firstname" maxlength="30" size="30cm" />
+        </p>
+        <p>
+            <input type="text" name="lname" maxlength="30" placeholder="Lastname" size="30cm" />
+        </p>
+        <p>
+            <input type="text" name="age" maxlength="3" placeholder="Age" size="30cm"/>
+        </p>
+        <p> 
+            <input type="text" name="email" maxlength="30" placeholder="Email" size="30cm" />
+        </p>
+        <p>
+            <input type="password" name="password" maxlength="30" placeholder="Password"size="30cm"  />
+        </p>
+        <p>
+            <span style="color:gray">Sex</span><br>
+            <button style="width: 90px;" >
+             <input type="radio" name="Sex" value="Male" /> Male
+            </button>
+            <button style="width: 90px;">
+             <input type="radio" name="Sex" value="Female" /> Female
+            </button>
+        </p>
+        <p>
+            <span style="color: gray;">Career <br></span> 
+            <input type="checkbox" name="work" value="i am a student" /> I am a student 
+         <input type="checkbox" name="work" value="i am a businessman" /> I am a businessman
+        </p>
+       <label for="birthday" style="color: gray;">Birthday</label><br>
+       <label for="Date">Date</label>
+        <select>
+            <option value="1">1</option> 
+            <option value="2">2</option> 
+            <option value="3">3</option> 
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option> 
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+        </select>
+
+        <label for="Month">Month</label>
+        <select>
+            <option value="January">Jan</option> 
+            <option value="February">Feb</option> 
+            <option value="March">Mar</option> 
+            <option value="April">Apr</option>
+            <option value="May">May</option>
+            <option value="June">Jun</option>
+            <option value="july">Jul</option>
+            <option value="August">Aug</option>
+            <option value="September">Sep</option>
+            <option value="October">Oct</option>
+            <option value="November">Nov</option>
+            <option value="December">Dec</option>
+
+        </select>
+        <label for="Year">Year</label>
+        <select>
+            <option value="1990">1990</option> 
+            <option value="1991">1991</option> 
+            <option value="1992">1992</option> 
+            <option value="1993">1993</option>
+            <option value="1994">1994</option>
+            <option value="1995">1995</option>
+            <option value="1996">1996</option>
+            <option value="1997">1997</option>
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option> 
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+        </select>
+        
+        <p>
+           <button id="but1" inputmode="submit">SUBMIT</button>
+           <button id="but2">RESET</button> <br>
+           <small style="color: gray;">By clicking Submit you are done. You are so welcome</small>
+           <span id=span2>@2021</span>
+        </p>
+        </form>
+
+</div>
+    </body>
+</html> 
